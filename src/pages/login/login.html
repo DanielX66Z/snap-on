@@ -1,0 +1,33 @@
+<ion-content>
+        <ion-list>
+            <div class="top-page">
+              <h2  text-center>
+                  <img src="assets/imgs/car-icon.jpg" alt="">
+              </h2>
+                
+            </div>
+            <div class="middle-page">
+              <ion-row>
+                  <ion-col>
+                  <h3 text-right class="text-white">Ingresar</h3>
+                  </ion-col>
+              </ion-row>
+              
+          
+                <ion-item class="username">
+                  <ion-input type="text" [(ngModel)]="email" style="color: white"  placeholder="Email"></ion-input>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-input type="password" [(ngModel)]="password" style="color: white"  placeholder="Password"></ion-input>
+                </ion-item>
+              
+              
+              
+                <button ion-button full (click)="login()"  color="primary">Ingresar</button>  
+                <button ion-button clear class="text-white" (click)="showRegisterPage()" style="float: right;margin-top:0">Registrar</button>
+            </div>
+          
+          </ion-list>
+    </ion-content>
+    
